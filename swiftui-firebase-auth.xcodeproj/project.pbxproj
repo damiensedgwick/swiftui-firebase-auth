@@ -13,6 +13,7 @@
 		2BD75E9A2732909E0074E5A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD75E992732909E0074E5A7 /* ContentView.swift */; };
 		2BD75E9C2732909F0074E5A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD75E9B2732909F0074E5A7 /* Assets.xcassets */; };
 		2BD75E9F2732909F0074E5A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD75E9E2732909F0074E5A7 /* Preview Assets.xcassets */; };
+		2BF628B52733285C006A0D57 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF628B42733285C006A0D57 /* Constants.swift */; };
 		2BFD9C8F27331EF100D6498B /* EmailAndPasswordFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFD9C8E27331EF100D6498B /* EmailAndPasswordFormView.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		2BD75E992732909E0074E5A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2BD75E9B2732909F0074E5A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BD75E9E2732909F0074E5A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2BF628B42733285C006A0D57 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2BFD9C8E27331EF100D6498B /* EmailAndPasswordFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAndPasswordFormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,6 +43,7 @@
 		2B05A4AE2733255C004229FE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2BF628B42733285C006A0D57 /* Constants.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				2BD75E9A2732909E0074E5A7 /* ContentView.swift in Sources */,
 				2BD75E982732909E0074E5A7 /* swiftui_firebase_authApp.swift in Sources */,
 				2BFD9C8F27331EF100D6498B /* EmailAndPasswordFormView.swift in Sources */,
+				2BF628B52733285C006A0D57 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
