@@ -13,7 +13,6 @@
 		2BD75E9A2732909E0074E5A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD75E992732909E0074E5A7 /* ContentView.swift */; };
 		2BD75E9C2732909F0074E5A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD75E9B2732909F0074E5A7 /* Assets.xcassets */; };
 		2BD75E9F2732909F0074E5A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD75E9E2732909F0074E5A7 /* Preview Assets.xcassets */; };
-		2BFD9C8D2733189400D6498B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFD9C8C2733189400D6498B /* Constants.swift */; };
 		2BFD9C8F27331EF100D6498B /* EmailAndPasswordFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFD9C8E27331EF100D6498B /* EmailAndPasswordFormView.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +23,6 @@
 		2BD75E992732909E0074E5A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2BD75E9B2732909F0074E5A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BD75E9E2732909F0074E5A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2BFD9C8C2733189400D6498B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = SOURCE_ROOT; };
 		2BFD9C8E27331EF100D6498B /* EmailAndPasswordFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAndPasswordFormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,6 +38,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B05A4AE2733255C004229FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		2BD75E8B2732909E0074E5A7 = {
 			isa = PBXGroup;
 			children = (
@@ -59,8 +64,8 @@
 		2BD75E962732909E0074E5A7 /* swiftui-firebase-auth */ = {
 			isa = PBXGroup;
 			children = (
+				2B05A4AE2733255C004229FE /* Models */,
 				2BD75EA5273290B00074E5A7 /* App */,
-				2BD75EA6273290B60074E5A7 /* Models */,
 				2BD75E9D2732909F0074E5A7 /* Preview Content */,
 				2BD75EA7273290BC0074E5A7 /* Views */,
 			);
@@ -83,14 +88,6 @@
 				2BD75E972732909E0074E5A7 /* swiftui_firebase_authApp.swift */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		2BD75EA6273290B60074E5A7 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				2BFD9C8C2733189400D6498B /* Constants.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		2BD75EA7273290BC0074E5A7 /* Views */ = {
@@ -182,7 +179,6 @@
 				2BD75E9A2732909E0074E5A7 /* ContentView.swift in Sources */,
 				2BD75E982732909E0074E5A7 /* swiftui_firebase_authApp.swift in Sources */,
 				2BFD9C8F27331EF100D6498B /* EmailAndPasswordFormView.swift in Sources */,
-				2BFD9C8D2733189400D6498B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
