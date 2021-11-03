@@ -51,9 +51,9 @@
 		2BD75E962732909E0074E5A7 /* swiftui-firebase-auth */ = {
 			isa = PBXGroup;
 			children = (
-				2BD75E972732909E0074E5A7 /* swiftui_firebase_authApp.swift */,
-				2BD75E992732909E0074E5A7 /* ContentView.swift */,
-				2BD75E9B2732909F0074E5A7 /* Assets.xcassets */,
+				2BD75EA7273290BC0074E5A7 /* Views */,
+				2BD75EA6273290B60074E5A7 /* Models */,
+				2BD75EA5273290B00074E5A7 /* App */,
 				2BD75E9D2732909F0074E5A7 /* Preview Content */,
 			);
 			path = "swiftui-firebase-auth";
@@ -65,6 +65,30 @@
 				2BD75E9E2732909F0074E5A7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2BD75EA5273290B00074E5A7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2BD75E9B2732909F0074E5A7 /* Assets.xcassets */,
+				2BD75E972732909E0074E5A7 /* swiftui_firebase_authApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2BD75EA6273290B60074E5A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2BD75EA7273290BC0074E5A7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2BD75E992732909E0074E5A7 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
