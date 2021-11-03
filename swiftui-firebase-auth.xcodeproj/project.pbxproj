@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B536743273293CB00305BC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B536742273293CB00305BC1 /* GoogleService-Info.plist */; };
+		2B5367462732944B00305BC1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2B5367452732944B00305BC1 /* FirebaseAuth */; };
 		2BD75E982732909E0074E5A7 /* swiftui_firebase_authApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD75E972732909E0074E5A7 /* swiftui_firebase_authApp.swift */; };
 		2BD75E9A2732909E0074E5A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD75E992732909E0074E5A7 /* ContentView.swift */; };
 		2BD75E9C2732909F0074E5A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD75E9B2732909F0074E5A7 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B5367462732944B00305BC1 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +112,9 @@
 			dependencies = (
 			);
 			name = "swiftui-firebase-auth";
+			packageProductDependencies = (
+				2B5367452732944B00305BC1 /* FirebaseAuth */,
+			);
 			productName = "swiftui-firebase-auth";
 			productReference = 2BD75E942732909E0074E5A7 /* swiftui-firebase-auth.app */;
 			productType = "com.apple.product-type.application";
@@ -138,6 +143,9 @@
 				Base,
 			);
 			mainGroup = 2BD75E8B2732909E0074E5A7;
+			packageReferences = (
+				2B5367442732944B00305BC1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 2BD75E952732909E0074E5A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -369,6 +377,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2B5367442732944B00305BC1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2B5367452732944B00305BC1 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B5367442732944B00305BC1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2BD75E8C2732909E0074E5A7 /* Project object */;
 }
