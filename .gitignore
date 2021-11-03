@@ -94,13 +94,13 @@ xcuserdata
 
 ### SwiftPM ###
 
+.DS_Store
+./DS_Store
+./**/DS_Store
 
 ### Xcode ###
 # Xcode
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
-
-
-
 
 ## Gcc Patch
 /*.gcno
