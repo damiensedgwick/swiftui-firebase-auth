@@ -8,9 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+  @State var emailAddress: String = ""
+  //  @FocusState private var emailAddressFieldIsFocused: Bool = false
+
+  @State var password: String = ""
+  //  @FocusState private var passwordFieldIsFocused: Bool = false
+
   var body: some View {
-    Text("Hello, world!")
-      .padding()
+    ZStack {
+      Color("BackgroundColor")
+        .edgesIgnoringSafeArea(.all)
+
+      EmailAndPasswordFormView(emailAddress: $emailAddress, password: $password)
+    }
   }
 }
 
