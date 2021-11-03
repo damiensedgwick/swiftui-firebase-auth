@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B536743273293CB00305BC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B536742273293CB00305BC1 /* GoogleService-Info.plist */; };
 		2BD75E982732909E0074E5A7 /* swiftui_firebase_authApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD75E972732909E0074E5A7 /* swiftui_firebase_authApp.swift */; };
 		2BD75E9A2732909E0074E5A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD75E992732909E0074E5A7 /* ContentView.swift */; };
 		2BD75E9C2732909F0074E5A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD75E9B2732909F0074E5A7 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B536742273293CB00305BC1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2BD75E942732909E0074E5A7 /* swiftui-firebase-auth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-firebase-auth.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD75E972732909E0074E5A7 /* swiftui_firebase_authApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_firebase_authApp.swift; sourceTree = "<group>"; };
 		2BD75E992732909E0074E5A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				2BD75E9B2732909F0074E5A7 /* Assets.xcassets */,
+				2B536742273293CB00305BC1 /* GoogleService-Info.plist */,
 				2BD75E972732909E0074E5A7 /* swiftui_firebase_authApp.swift */,
 			);
 			path = App;
@@ -151,6 +154,7 @@
 			files = (
 				2BD75E9F2732909F0074E5A7 /* Preview Assets.xcassets in Resources */,
 				2BD75E9C2732909F0074E5A7 /* Assets.xcassets in Resources */,
+				2B536743273293CB00305BC1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
