@@ -60,6 +60,7 @@
 		2BD75E8B2732909E0074E5A7 = {
 			isa = PBXGroup;
 			children = (
+				2BB8F8FE2734175A00539D7E /* README.md */,
 				2BD75E962732909E0074E5A7 /* swiftui-firebase-auth */,
 				2BD75E952732909E0074E5A7 /* Products */,
 			);
@@ -81,7 +82,6 @@
 				2B05A4AE2733255C004229FE /* Models */,
 				2BD75E9D2732909F0074E5A7 /* Preview Content */,
 				2BD75EA7273290BC0074E5A7 /* Views */,
-				2BB8F8FE2734175A00539D7E /* README.md */,
 			);
 			path = "swiftui-firebase-auth";
 			sourceTree = "<group>";
