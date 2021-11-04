@@ -6,13 +6,12 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct EmailAndPasswordFormView: View {
   @Binding var emailAddress: String
-  //  @FocusState private var emailAddressFieldIsFocused: Bool = false
-
   @Binding var password: String
-  //  @FocusState private var passwordFieldIsFocused: Bool = false
+  @Binding var userIsSignedIn: Bool
 
   var body: some View {
 
@@ -32,7 +31,7 @@ struct EmailAndPasswordFormView: View {
           )
           .cornerRadius(Constants.General.textInputCornerRadius)
 
-        TextField("Password", text: $password)
+        SecureField("Password", text: $password)
           .frame(height: Constants.General.textInputHeight)
           .frame(maxWidth: Constants.General.textInputMaxWidth)
           .textInputAutocapitalization(.never)
@@ -43,7 +42,15 @@ struct EmailAndPasswordFormView: View {
           )
           .cornerRadius(Constants.General.textInputCornerRadius)
 
-        Button(action: {}, label: {
+        Button(action: {
+          Auth.auth().signIn(withEmail: emailAddress, password: password) { (result, error) in
+            if error != nil {
+              print(error?.localizedDescription ?? "")
+            } else {
+              userIsSignedIn = true
+            }
+          }
+        }, label: {
           Text("Submit".uppercased())
             .bold()
             .font(.title3)
@@ -63,8 +70,9 @@ struct EmailAndPasswordFormView: View {
 struct EmailAndPasswordFormView_Previews: PreviewProvider {
   @State static var emailAddress = "damiensedgwick@icloud.com"
   @State static var password = "Password1234"
+  @State static var userIsSignedIn = false
 
   static var previews: some View {
-    EmailAndPasswordFormView(emailAddress: $emailAddress, password: $password)
+    EmailAndPasswordFormView(emailAddress: $emailAddress, password: $password, userIsSignedIn: $userIsSignedIn)
   }
 }

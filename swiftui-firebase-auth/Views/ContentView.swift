@@ -11,12 +11,19 @@ struct ContentView: View {
   @State var emailAddress: String = ""
   @State var password: String = ""
 
+  @State var userIsSignedIn: Bool = false
+
   var body: some View {
     ZStack {
       Color("BackgroundColor")
         .edgesIgnoringSafeArea(.all)
 
-      EmailAndPasswordFormView(emailAddress: $emailAddress, password: $password)
+      if userIsSignedIn == true {
+        DashboardView(userIsSignedIn: $userIsSignedIn)
+      } else {
+        EmailAndPasswordFormView(emailAddress: $emailAddress, password: $password, userIsSignedIn: $userIsSignedIn)
+      }
+
     }
   }
 }

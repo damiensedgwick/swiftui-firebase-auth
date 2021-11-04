@@ -13,6 +13,9 @@
 		2BD75E9A2732909E0074E5A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD75E992732909E0074E5A7 /* ContentView.swift */; };
 		2BD75E9C2732909F0074E5A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD75E9B2732909F0074E5A7 /* Assets.xcassets */; };
 		2BD75E9F2732909F0074E5A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD75E9E2732909F0074E5A7 /* Preview Assets.xcassets */; };
+		2BEBAA1B273406250049E9F3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBAA1A273406250049E9F3 /* User.swift */; };
+		2BEBAA1E273406B10049E9F3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBAA1D273406B10049E9F3 /* LoginViewController.swift */; };
+		2BEBAA20273407150049E9F3 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBAA1F273407150049E9F3 /* DashboardView.swift */; };
 		2BF628B52733285C006A0D57 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF628B42733285C006A0D57 /* Constants.swift */; };
 		2BFD9C8F27331EF100D6498B /* EmailAndPasswordFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFD9C8E27331EF100D6498B /* EmailAndPasswordFormView.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +27,9 @@
 		2BD75E992732909E0074E5A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2BD75E9B2732909F0074E5A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BD75E9E2732909F0074E5A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2BEBAA1A273406250049E9F3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2BEBAA1D273406B10049E9F3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2BEBAA1F273407150049E9F3 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		2BF628B42733285C006A0D57 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2BFD9C8E27331EF100D6498B /* EmailAndPasswordFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAndPasswordFormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -44,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				2BF628B42733285C006A0D57 /* Constants.swift */,
+				2BEBAA1A273406250049E9F3 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -67,8 +74,9 @@
 		2BD75E962732909E0074E5A7 /* swiftui-firebase-auth */ = {
 			isa = PBXGroup;
 			children = (
-				2B05A4AE2733255C004229FE /* Models */,
 				2BD75EA5273290B00074E5A7 /* App */,
+				2BEBAA1C273406930049E9F3 /* Controllers */,
+				2B05A4AE2733255C004229FE /* Models */,
 				2BD75E9D2732909F0074E5A7 /* Preview Content */,
 				2BD75EA7273290BC0074E5A7 /* Views */,
 			);
@@ -98,8 +106,17 @@
 			children = (
 				2BD75E992732909E0074E5A7 /* ContentView.swift */,
 				2BFD9C8E27331EF100D6498B /* EmailAndPasswordFormView.swift */,
+				2BEBAA1F273407150049E9F3 /* DashboardView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		2BEBAA1C273406930049E9F3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2BEBAA1D273406B10049E9F3 /* LoginViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,9 +196,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BEBAA1E273406B10049E9F3 /* LoginViewController.swift in Sources */,
 				2BD75E9A2732909E0074E5A7 /* ContentView.swift in Sources */,
 				2BD75E982732909E0074E5A7 /* swiftui_firebase_authApp.swift in Sources */,
+				2BEBAA20273407150049E9F3 /* DashboardView.swift in Sources */,
 				2BFD9C8F27331EF100D6498B /* EmailAndPasswordFormView.swift in Sources */,
+				2BEBAA1B273406250049E9F3 /* User.swift in Sources */,
 				2BF628B52733285C006A0D57 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
