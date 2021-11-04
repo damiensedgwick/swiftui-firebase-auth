@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2B536743273293CB00305BC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B536742273293CB00305BC1 /* GoogleService-Info.plist */; };
 		2B5367462732944B00305BC1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2B5367452732944B00305BC1 /* FirebaseAuth */; };
+		2BB8F8FF2734175A00539D7E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2BB8F8FE2734175A00539D7E /* README.md */; };
 		2BD75E982732909E0074E5A7 /* swiftui_firebase_authApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD75E972732909E0074E5A7 /* swiftui_firebase_authApp.swift */; };
 		2BD75E9A2732909E0074E5A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD75E992732909E0074E5A7 /* ContentView.swift */; };
 		2BD75E9C2732909F0074E5A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD75E9B2732909F0074E5A7 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		2B536742273293CB00305BC1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2BB8F8FE2734175A00539D7E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2BD75E942732909E0074E5A7 /* swiftui-firebase-auth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-firebase-auth.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD75E972732909E0074E5A7 /* swiftui_firebase_authApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_firebase_authApp.swift; sourceTree = "<group>"; };
 		2BD75E992732909E0074E5A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				2B05A4AE2733255C004229FE /* Models */,
 				2BD75E9D2732909F0074E5A7 /* Preview Content */,
 				2BD75EA7273290BC0074E5A7 /* Views */,
+				2BB8F8FE2734175A00539D7E /* README.md */,
 			);
 			path = "swiftui-firebase-auth";
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			files = (
 				2BD75E9F2732909F0074E5A7 /* Preview Assets.xcassets in Resources */,
 				2BD75E9C2732909F0074E5A7 /* Assets.xcassets in Resources */,
+				2BB8F8FF2734175A00539D7E /* README.md in Resources */,
 				2B536743273293CB00305BC1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
