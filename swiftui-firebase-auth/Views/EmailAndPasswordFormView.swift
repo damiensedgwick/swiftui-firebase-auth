@@ -50,7 +50,8 @@ struct EmailAndPasswordFormView: View {
               .foregroundColor(Color.white)
           }
         }
-        .frame(width: 300)
+        .frame(maxWidth: Constants.General.textInputMaxWidth)
+
 
         Button(action: {
           if (createNewAccount) {
@@ -62,7 +63,6 @@ struct EmailAndPasswordFormView: View {
               }
             }
           } else {
-
           Auth.auth().signIn(withEmail: emailAddress, password: password) { (result, error) in
             if error != nil {
               print(error?.localizedDescription ?? "")
