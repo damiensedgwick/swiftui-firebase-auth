@@ -13,6 +13,8 @@ struct EmailAndPasswordFormView: View {
   @Binding var password: String
   @Binding var userIsSignedIn: Bool
 
+  @State private var createNewAccount: Bool = false
+
   var body: some View {
 
     ZStack {
@@ -42,7 +44,25 @@ struct EmailAndPasswordFormView: View {
           )
           .cornerRadius(Constants.General.textInputCornerRadius)
 
+        HStack {
+          Toggle(isOn: $createNewAccount) {
+            Text("Create new account?")
+              .foregroundColor(Color.white)
+          }
+        }
+        .frame(width: 300)
+
         Button(action: {
+          if (createNewAccount) {
+            Auth.auth().createUser(withEmail: emailAddress, password: password)  { (result, error) in
+              if error != nil {
+                print(error?.localizedDescription ?? "")
+              } else {
+                userIsSignedIn = true
+              }
+            }
+          } else {
+
           Auth.auth().signIn(withEmail: emailAddress, password: password) { (result, error) in
             if error != nil {
               print(error?.localizedDescription ?? "")
@@ -50,8 +70,9 @@ struct EmailAndPasswordFormView: View {
               userIsSignedIn = true
             }
           }
+          }
         }, label: {
-          Text("Submit".uppercased())
+          Text(createNewAccount ? "Create".uppercased() : "Sign in".uppercased())
             .bold()
             .font(.title3)
         })
