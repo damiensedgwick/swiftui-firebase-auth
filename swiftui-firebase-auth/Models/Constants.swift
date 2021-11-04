@@ -12,7 +12,7 @@ enum Constants {
   enum General {
     // Text fields
     public static let textInputHeight = CGFloat(40)
-    public static let textInputMaxWidth = CGFloat(325)
+    public static let textInputMaxWidth = CGFloat(300)
     public static let textInputCornerRadius = CGFloat(5)
 
     // Buttons
